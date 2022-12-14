@@ -1,3 +1,8 @@
+data/
+results/
+data.tar.gz
+results.tar.gz
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
