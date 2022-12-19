@@ -1,7 +1,13 @@
-# Bind-Degs enrichments
-Perform and explore enrichment analyses based on Bind-Degs primary screening data
+# Protein Set Enrichment Analysis for Ligand Discovery
+Perform and explore enrichment analyses based on Ligand Discovery primary screening data
 
 ## Installation
+
+We recommend using Conda. Make sure a C++ compiler is installed:
+
+```bash
+conda install -c conda-forge cxx-compiler
+```
 
 Install the necessary dependencies:
 ```bash
