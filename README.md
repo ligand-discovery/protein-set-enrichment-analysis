@@ -56,6 +56,31 @@ The current Streamlit App capitalizes on these two display items to provide info
 <img width="946" alt="mockup" src="https://user-images.githubusercontent.com/19725330/233402593-be189f9c-7365-4840-ad92-b87ad22ca6d8.png">
 Mockup of the Streamlit Protein Set Enrichment Analysis App. The two main pages are highlighted. On the left, we sketch the leaderboard page, focused on a given fragment. On the right, we sketch the focus page, specific to a fragment-category pair.
 
+## The case of C310
+Below we use the case of fragment C310 to illustrate the pages of the protein enrichment app.
+
+### Overview page
+Table view, filtering for SQSTM1:
+![screenshot-1](https://user-images.githubusercontent.com/19725330/233403655-61623f8b-1ad8-42f9-aa60-5d34e96c39cb.png)
+Leaderboard page, table view, where SQSTM1 is used as a filtering gene in the leading edge.
+
+Plot view:
+![screenshot-2](https://user-images.githubusercontent.com/19725330/233403770-5988ecee-52cc-4ab7-a7c3-951f967e9c19.png)
+Plot view of the leaderboard page
+
+### Detailed page
+Table view, focused on localization terms:
+![screenshot-3](https://user-images.githubusercontent.com/19725330/233403985-e057d535-c35e-4904-b82b-1899fd4bb491.png)
+Enriched terms, in a table view. At the bottom, there is the possibility to explore proteins.
+
+Basic plots:
+![screenshot-4](https://user-images.githubusercontent.com/19725330/233404083-1429640a-0353-4d13-8f89-f11b6734b8c4.png)
+Basic enrichment plots. Fill color of the curve indicates strength of enrichment signal.
+
+Advanced plots:
+![screenshot-5](https://user-images.githubusercontent.com/19725330/233404229-15e75aed-ef9c-46be-8473-92e3d6aa0e11.png)
+Advanced enrichment plots. Please see above for interpretation.
+
 ## Installation
 
 We recommend using Conda. Make sure a C++ compiler is installed:
