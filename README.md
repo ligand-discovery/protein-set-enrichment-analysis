@@ -86,9 +86,9 @@ Advanced enrichment plots. Please see above for interpretation.
 ### Download data
 
 First of all, you have to a few big files download data files. These files need to be unzipped in the `protein-set-enrichment-analysis/` folder.
-* Data:
-* Results: 
-* Cache: 
+* Data: https://ligand-discovery.s3.eu-central-1.amazonaws.com/protein-set-enrichment-analysis/data.zip
+* Results: https://ligand-discovery.s3.eu-central-1.amazonaws.com/protein-set-enrichment-analysis/results.zip
+* Cache: https://ligand-discovery.s3.eu-central-1.amazonaws.com/protein-set-enrichment-analysis/cache.zip
 
 ### App-only installation and run
 
