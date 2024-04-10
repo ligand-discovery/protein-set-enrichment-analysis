@@ -1,7 +1,13 @@
+.DS_Store
+cache/
 data/
 results/
+data.zip
+results.zip
+cache.zip
 data.tar.gz
 results.tar.gz
+cache.tar.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

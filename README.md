@@ -81,31 +81,54 @@ Advanced plots:
 ![screenshot-5](https://user-images.githubusercontent.com/19725330/233404229-15e75aed-ef9c-46be-8473-92e3d6aa0e11.png)
 Advanced enrichment plots. Please see above for interpretation.
 
-## Installation
+## Installation and running the app
 
-We recommend using Conda. Make sure a C++ compiler is installed:
+### Download data
+
+First of all, you have to a few big files download data files. These files need to be unzipped in the `protein-set-enrichment-analysis/` folder.
+* Data:
+* Results: 
+* Cache: 
+
+### App-only installation and run
+
+This app has very few dependencies. You can install them as follows:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then, you can simply run the app as follows:
+
+```bash
+streamlit run app/app.py
+```
+
+### Non-cached installation and run
+
+In case you don't want to use the cache data, we have a much more complete version of the app that dynamically creates plots, etc. **We do not recommend using this version of the app** unless you are a developer of the Ligand Discovery project.
+
+To install the dynamic version of the app, we recommend using Conda. Make sure a C++ compiler is installed:
 
 ```bash
 conda install -c conda-forge cxx-compiler
 ```
 
 Install the necessary dependencies:
+
 ```bash
-pip install -r requirements.txt
+pip install -r requirements_dynamic.txt
 ```
 
-### Download the necessary data
+Finally, you can run the app as follows:
 
-If you are interested in running a local instance of this app, please reach out to [miquel@ersilia.io](mailto:miquel@ersilia.io). Necessary data is >50GB in size.
-
-## Run
-
-You can run the app with:
 ```bash
-streamlit run app/proteome.py
+streamlit run app/app_dynamic.py
 ```
 
-You can also run an app for quick exploration:
+### Other
+
+You can also run an app for quick exploration, such as identifying good enrichment signals for further inspection.
 ```bash
 streamlit run app/explore.py
 ```

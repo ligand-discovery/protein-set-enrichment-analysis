@@ -1,0 +1,13 @@
+streamlit
+pandas
+h5py
+numpy
+scikit-learn
+progress
+loess
+tqdm
+statsmodels
+mpmath
+mpsci @ git+https://github.com/WarrenWeckesser/mpsci.git
+stylia @ git+https://github.com/ersilia-os/stylia.git
+griddify @ git+https://github.com/ersilia-os/griddify.git

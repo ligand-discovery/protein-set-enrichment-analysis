@@ -191,6 +191,7 @@ if type_of_analysis == "Overview":
         if os.path.exists(os.path.join(rf, "result.tsv")):
             pass
         else:
+            st.error("Enrichment not found! Please run the analysis first.")
             enricher = Enricher(
                 signature_file=sf,
                 annotations_file=af,
@@ -915,7 +916,7 @@ else:
         from umap import UMAP
         from griddify import Cloud2Grid
 
-        @st.cache
+        @st.cache_data
         def annotations_grid_as_dict(ann, harm):
             df = harm.sort_values(["setsize", "pval", "overlap"], ascending=[False, True, False]).reset_index(drop=True)
             df = df.head(2048)
@@ -954,7 +955,7 @@ else:
 
         consensus = ec.run_consensus()
 
-        @st.cache
+        @st.cache_data
         def proteome_grid_as_dict(grid=True):
             def read_projection(h5_file):
                 with h5py.File(h5_file, "r") as f:
